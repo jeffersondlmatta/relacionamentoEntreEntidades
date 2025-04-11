@@ -1,0 +1,29 @@
+POST http://localhost:8080/colaboradores/cadastrar
+Content-Type: application/json
+
+{
+  "nome": "Diego",
+  "cargo": {
+    "codigo": 2,
+    "cargo": "devops",
+    "salario": 6800
+  }
+}
+
+###
+POST http://localhost:8080/cargos/cadastrar
+Content-Type: application/json
+
+{
+  "cargo": "devops",
+  "salario": 6800
+}
+
+###
+GET http://localhost:8080/cargos/listar
+Content-Type: application/json
+
+
+###
+DELETE http://localhost:8080/cliente
+Content-Type: application/json
