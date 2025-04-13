@@ -1,26 +1,36 @@
-POST http://localhost:8080/colaboradores/cadastrar
+POST http://localhost:8080/postagens/cadastrar
 Content-Type: application/json
 
+
 {
-  "nome": "Diego",
-  "cargo": {
-    "codigo": 2,
-    "cargo": "devops",
-    "salario": 6800
-  }
+  "titulo": "spring web",
+  "texto": "aprendendo spring relacionamento de entity",
+  "comentarios": [
+    {
+      "codigo": 1,
+      "autor": "autor da mensagem",
+      "texto": "otimo"
+    },
+    {
+      "codigo": 2,
+      "autor": "autor da mensagem",
+      "texto": "muito bom "
+    }
+  ]
+
 }
 
 ###
-POST http://localhost:8080/cargos/cadastrar
+POST http://localhost:8080/comentarios/cadastrar
 Content-Type: application/json
 
 {
-  "cargo": "devops",
-  "salario": 6800
+  "autor": "autor da mensagem",
+  "texto": "muito bom "
 }
 
 ###
-GET http://localhost:8080/cargos/listar
+GET http://localhost:8080/comentarios/listar
 Content-Type: application/json
 
 

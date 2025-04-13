@@ -12,6 +12,10 @@ target/
 .settings
 .springBeans
 .sts4-cache
+meuBanco.mv.db
+mvnw.cmd
+mvnw.cmd
+
 
 ### IntelliJ IDEA ###
 .idea
