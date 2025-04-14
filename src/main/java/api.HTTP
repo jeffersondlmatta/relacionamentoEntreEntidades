@@ -30,7 +30,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/comentarios/listar
+GET http://localhost:8080/postagens/listar
 Content-Type: application/json
 
 
